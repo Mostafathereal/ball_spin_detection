@@ -46,7 +46,7 @@ while True:
         cv2.imshow("circle_cropped_img", circle_cropped_img)
         get_raw_red_pixels(frame_bgr_np, circles_list[0][0][0], circles_list[0][0][1], circles_list[0][0][2])
     cv2.imshow("circles", circles_img)
-    cv2.imshow("frame_bgr_np", frame_bgr_np, 5)
+    cv2.imshow("frame_bgr_np", frame_bgr_np)
 
     if cv2.waitKey(0) & 0xFF == ord('q'):
         break
