@@ -43,12 +43,12 @@ while True:
 
     if circles_list is not None:
         circle_cropped_img = circle_crop(frame_bgr_np, circles_list[0][0][0], circles_list[0][0][1], circles_list[0][0][2])
-        cv2.imshow("circle_cropped_img", circle_cropped_img)
+        # cv2.imshow("circle_cropped_img", circle_cropped_img)
         get_raw_red_pixels(frame_bgr_np, circles_list[0][0][0], circles_list[0][0][1], circles_list[0][0][2])
-    cv2.imshow("circles", circles_img)
-    cv2.imshow("frame_bgr_np", frame_bgr_np)
+    # cv2.imshow("circles", circles_img)
+    # cv2.imshow("frame_bgr_np", frame_bgr_np)
 
-    if cv2.waitKey(0) & 0xFF == ord('q'):
+    if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 
