@@ -20,3 +20,4 @@ ball_spin_detection/
 conda activate trajekt_ball_spin 
 python main.py
 ```
+![](assets/result.png)
